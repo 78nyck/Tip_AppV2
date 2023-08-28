@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/styles.css">
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script defer src="JS/index.js"></script>
+        <title>Document</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Hello Everynyan!</h1>
+            <p>---Marc prolly---</p>
+            <p>I have made this bad looking program so that you dont have to use cringe spread sheet</p>
+        </header>
+
+        <div class="parent-box">
+            <div class="intro-box">
+                <div class="intro-row">
+                    Enter the names of each person paying (eg. john, jane, jan) / (eg. john s, jane s, jan): <input type="text" id="people-names" name="people-names" value="">
+                </div>
+
+                <div class="intro-row">
+                    Enter total tip: <input type="number" id="tip" name="tip" value=0>
+                </div>
+
+                <div class="intro-row">
+                    Enter total tax: <input type="number" id="tax" name="tax" value=0>
+                </div>
+        
+                <div class="intro-row name-submit">
+                    <button id="name-button">Submit Names</button>
+                </div>
+            </div>
+
+            <div class="primary-box">
+                <div class="tile-row">
+                    <!--
+                    <div class="tile-outline">
+                        <div class="food-info">
+                            <p>Food Name</p>
+                            <p>Food price</p>
+                        </div>
+
+                        <div class="name-checks">
+                            <label>name<input type="checkbox" value = "name"></label> 
+                            <label>name<input type="checkbox" value = "name"></label>
+                            <label>name<input type="checkbox" value = "name"></label>
+                            <label>name<input type="checkbox" value = "name"></label>
+                        </div>
+                    </div>
+                    -->
+                </div>
+
+                <div class="tile-input">
+                    <div class="input-field">
+                        Enter name of food item: <input type="text" id="food-name" name="food-name" value=" ">
+                    </div>
+
+                    <div class="input-field">
+                        Enter price of food item: <input type="number" id="food-price" name="food-price" value=0>
+                    </div>
+
+                    <div class="input-field food-adder">
+                        <button id="add-item">Add Item</button>
+                    </div>
+                </div>
+
+                <div class="price-total">
+                    <h4>Total Cost (pre tip and tax):</h4>
+                    <h4 id="total-number">0</h4>
+                    <h4>$</h4>
+                </div>
+
+                <div class="final-submit">
+                    <button>Final Submit</button>
+                </div>
+            </div>
+        </div>
+        
+
+        
+        
+    </body>
+</html>

@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: beige;
+    padding: 8px;
+}
+
+.intro-box {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+.intro-row {
+    margin: 5px;
+}
+
+.name-submit {
+    margin-left: auto;
+}
+
+.name-submit>button {
+    margin-right: 30px;
+    margin-top: 8px;;
+}
+
+.primary-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.tile-row {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+}
+
+.price-total {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+#total-number {
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.tile-outline {
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+.food-info {
+    padding: 5px 10px 5px 5px;
+}
+.name-checks {
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid black;
+    padding: 5px 5px 5px 10px;
+}
+
+.tile-input {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    width: fit-content;
+    
+}
+
+.input-field {
+    margin: 5px;
+}
+
+.food-adder {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.food-adder>button {
+    margin-right: 30px;
+}
+
+.final-submit {
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+}
+
+.final-submit>button {
+    width: 200px;
+    height: 60px;
+    border-radius: 50px;
+    font-size: large;
+    background-color: khaki;
+}
+
+.hidden-element {
+    display: none;
+}
+
+
+
