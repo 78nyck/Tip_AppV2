@@ -163,6 +163,21 @@ class ProgramUI {
             $("#total-number").text((Number($("#total-number").text()) + Number(foodPrice)).toFixed(2));
         }
     }
+
+    alertPayout(context) {
+        return function() {
+            context.processItemData(context)();
+            context.calculateTotals();
+            let payoutString = "";
+
+            for (const name of context.names) {
+                payoutString = payoutString + name + ": " + context.personalTotals[name] + ", ";
+            }
+
+            alert(payoutString);
+            alert("poopy");
+        }
+    }
 }
 
 let programState = new ProgramState();
@@ -170,6 +185,6 @@ let programUI = new ProgramUI(programState);
 
 $("#name-button").on("click", programUI.submitNameList(programState));
 $("#add-item").on("click", programUI.createFoodItemTile(programState));
-$(".final-submit>button").on("click", programState.processItemData(programState));
+$(".final-submit-button").on("click", programUI.alertPayout(programState));
 
 
