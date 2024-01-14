@@ -116,6 +116,7 @@ class ProgramUI {
             $(".intro-box").css({"opacity": "1", "display": "flex"}).show(200).animate({opacity:0});
             $(".intro-box").hide(300);
             $(".primary-box").show(500);
+            console.log("hello");
             
             context.processNameTipTax($("#people-names").val(), $("#tip").val(), $("#tax").val());
         }
